@@ -33,7 +33,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "6"
     haproxy.router.openshift.io/timeout: 300s
 spec:
-  host: neuralbank.apps.cluster-wjvhz.dynamic.redhatworkshops.io
+  host: neuralbank.apps.ocp.kw5t8.sandbox437.opentlc.com
   to:
     kind: Service
     name: neuralbank-gateway-istio
