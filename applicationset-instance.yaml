@@ -161,11 +161,11 @@ spec:
         - group: rbac.authorization.k8s.io
           kind: ClusterRole
           name: argocd-sail-operator-manager
-          jqPathExpressions: ["$.metadata.annotations[\"kubectl.kubernetes.io/last-applied-configuration\"]"]
+          jqPathExpressions: [".metadata.annotations[\"kubectl.kubernetes.io/last-applied-configuration\"]"]
         - group: rbac.authorization.k8s.io
           kind: ClusterRoleBinding
           name: argocd-sail-operator-binding
-          jqPathExpressions: ["$.metadata.annotations[\"kubectl.kubernetes.io/last-applied-configuration\"]"]
+          jqPathExpressions: [".metadata.annotations[\"kubectl.kubernetes.io/last-applied-configuration\"]"]
       syncPolicy:
         automated:
           selfHeal: true
