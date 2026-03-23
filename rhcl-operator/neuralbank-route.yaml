@@ -11,7 +11,7 @@ spec:
     - name: neuralbank-gateway
       namespace: neuralbank-stack
   hostnames:
-    - "neuralbank.apps.cluster-wjvhz.dynamic.redhatworkshops.io"
+    - "neuralbank.apps.ocp.kw5t8.sandbox437.opentlc.com"
   rules:
     - matches:
         - path:
